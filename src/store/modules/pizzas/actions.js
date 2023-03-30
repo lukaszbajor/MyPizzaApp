@@ -1,1 +1,5 @@
-export default {};
+export default {
+  // fetchPizzas({ commit }) {
+  //     commit('setPizzas', pizzas);
+  // }
+};

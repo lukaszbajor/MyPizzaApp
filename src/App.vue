@@ -7,8 +7,10 @@
 <script>
 import TheHeader from "./components/Layouts/TheHeader.vue";
 import TheFooter from "./components/Layouts/TheFooter.vue";
+import store from "./store";
 
 export default {
+  store,
   components: {
     TheHeader,
     TheFooter,
