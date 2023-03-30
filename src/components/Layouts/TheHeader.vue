@@ -9,7 +9,7 @@
       <button><router-link to="/settings">Ustawienia</router-link></button>
       <!-- <button><router-link to="/register">Zarejestruj się</router-link></button> -->
     </div>
-    <button @click="zal">zaloguj</button>
+    <!-- <button @click="zal">zaloguj</button> -->
   </header>
 </template>
 <script>
@@ -40,10 +40,19 @@ export default {
 
 <style>
 header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
   background-color: tomato;
 }
 a.router-link-active {
   color: green;
   background-color: pink;
+}
+div {
+  align-self: center;
+}
+button {
+  margin-right: 10px;
 }
 </style>
