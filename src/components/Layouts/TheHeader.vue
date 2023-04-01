@@ -10,10 +10,10 @@
       >
     </div>
     <div v-else>
-      <button><router-link to="/settings">Ustawienia</router-link></button>
-      <!-- <button><router-link to="/register">Zarejestruj się</router-link></button> -->
+      <base-button
+        ><router-link to="/settings">Ustawienia</router-link></base-button
+      >
     </div>
-    <!-- <button @click="zal">zaloguj</button> -->
   </header>
 </template>
 <script>
@@ -32,7 +32,6 @@ export default {
       this.isLogin = !this.isLogin;
     },
   },
-  
 };
 </script>
 
