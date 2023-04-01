@@ -2,8 +2,12 @@
   <header>
     <h1><router-link to="/">MyPizzaApp</router-link></h1>
     <div v-if="isLogin === false">
-      <button><router-link to="/login">Zaloguj się</router-link></button>
-      <button><router-link to="/register">Zarejestruj się</router-link></button>
+      <base-button
+        ><router-link to="/login">Zaloguj się</router-link></base-button
+      >
+      <base-button
+        ><router-link to="/register">Zarejestruj się</router-link></base-button
+      >
     </div>
     <div v-else>
       <button><router-link to="/settings">Ustawienia</router-link></button>
@@ -13,8 +17,11 @@
   </header>
 </template>
 <script>
-// import router from "../../router.js";
+import BaseButton from "../UI/BaseButton.vue";
 export default {
+  components: {
+    BaseButton,
+  },
   data() {
     return {
       isLogin: false,
@@ -25,16 +32,7 @@ export default {
       this.isLogin = !this.isLogin;
     },
   },
-  //   created() {
-  //     const that = this;
-  //     router.beforeEach(function (to, from, next) {
-  //       if (that.isLogin === true) {
-  //         next();
-  //       } else {
-  //         next("/");
-  //       }
-  //     });
-  //   },
+  
 };
 </script>
 
