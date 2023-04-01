@@ -27,6 +27,8 @@
       id="phoneNumber"
       v-model="userPhoneNumber"
     />
+    <label for="email">Adres- e-mail:</label>
+    <input type="email" name="email" id="email" v-model="userEmail" />
     <label for="login">Login:</label>
     <input type="text" name="login" id="login" v-model="userLogin" />
     <label for="password">Hasło:</label>
@@ -57,6 +59,7 @@ export default {
       userStreet: "",
       userHomeNumber: "",
       userPhoneNumber: "",
+      userEmail: "",
       userLogin: "",
       userPassword: "",
       userPassword2: "",
