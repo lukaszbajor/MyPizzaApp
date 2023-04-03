@@ -25,12 +25,23 @@
 
       <input type="radio" name="pizza" />
     </div>
-    <button>Dodaj do koszyka</button>
+    <button v-if="isLogin === true">Dodaj do koszyka</button>
+    <button v-else disabled>Zaloguj się, aby dodać do koszyka</button>
   </li>
 </template>
 
 <script>
 export default {
   props: ["filteredPizzas"],
+  data() {
+    return {
+      isLogin: false,
+    };
+  },
+  methods: {
+    zal() {
+      this.isLogin = !this.isLogin;
+    },
+  },
 };
 </script>

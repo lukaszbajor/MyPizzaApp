@@ -12,8 +12,10 @@
           id="password"
           v-model="userPassword"
         />
-        <input type="submit" value="Zaloguj się" />
-        <input type="reset" value="Resetuj" />
+        <div class="buttons">
+          <input type="submit" value="Zaloguj się" />
+          <input type="reset" value="Resetuj" />
+        </div>
       </form>
     </base-card>
   </base-section>
@@ -61,5 +63,13 @@ input[type="password"],
 input[type="email"],
 input[type="number"] {
   width: 100%;
+}
+.buttons {
+  width: 100%;
+  margin-top: 1.2em;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons input {
 }
 </style>

@@ -53,8 +53,10 @@
           id="password2"
           v-model="userPassword2"
         />
-        <input type="submit" value="Zarejestruj się" />
-        <input type="reset" value="Resetuj" />
+        <div class="buttons">
+          <input type="submit" value="Zarejestruj się" />
+          <input type="reset" value="Resetuj" />
+        </div>
       </form>
     </base-card>
   </base-section>
