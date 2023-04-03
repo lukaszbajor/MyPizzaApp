@@ -2,6 +2,7 @@
   <base-section>
     <base-card>
       <form class="form" @submit.prevent="submit">
+        <h2>Rejestracja</h2>
         <label for="firstName">Imię:</label>
         <input
           type="text"
