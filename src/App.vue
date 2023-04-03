@@ -24,4 +24,7 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 67.5%;
+}
 </style>
