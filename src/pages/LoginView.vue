@@ -1,25 +1,29 @@
 <template>
   <base-section>
-    <form @submit.prevent="submit">
-      <label for="login">Login:</label>
-      <input type="text" name="login" id="login" v-model="userLogin" />
-      <label for="password">Hasło:</label>
-      <input
-        type="password"
-        name="password"
-        id="password"
-        v-model="userPassword"
-      />
-      <input type="submit" value="Zaloguj się" />
-      <input type="reset" value="Resetuj" />
-    </form>
+    <base-card>
+      <form class="form" @submit.prevent="submit">
+        <label for="login">Login:</label>
+        <input type="text" name="login" id="login" v-model="userLogin" />
+        <label for="password">Hasło:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          v-model="userPassword"
+        />
+        <input type="submit" value="Zaloguj się" />
+        <input type="reset" value="Resetuj" />
+      </form>
+    </base-card>
   </base-section>
 </template>
 <script>
 import BaseSection from "@/components/UI/BaseSection.vue";
+import BaseCard from "@/components/UI/BaseCard.vue";
 export default {
   components: {
     BaseSection,
+    BaseCard,
   },
   data() {
     return {
@@ -34,4 +38,14 @@ export default {
   },
 };
 </script>
-<style></style>
+<style>
+.form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: tomato;
+}
+</style>

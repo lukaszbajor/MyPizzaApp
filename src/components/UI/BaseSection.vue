@@ -9,5 +9,7 @@ export default {};
 </script>
 
 <style>
-
+section {
+  padding: 30px;
+}
 </style>
