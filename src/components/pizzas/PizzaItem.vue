@@ -35,7 +35,7 @@ export default {
   props: ["filteredPizzas"],
   data() {
     return {
-      isLogin: false,
+      isLogin: true,
     };
   },
   methods: {
