@@ -25,7 +25,7 @@
 
       <input type="radio" name="pizza" />
     </div>
-    <button v-if="isLogin === true">Dodaj do koszyka</button>
+    <button v-if="isLogin === true" @click="addItem">Dodaj do koszyka</button>
     <button v-else disabled>Zaloguj się, aby dodać do koszyka</button>
   </li>
 </template>
@@ -36,11 +36,15 @@ export default {
   data() {
     return {
       isLogin: true,
+     
     };
   },
   methods: {
     zal() {
       this.isLogin = !this.isLogin;
+    },
+    addItem() {
+      console.log("OYEAH!");
     },
   },
 };

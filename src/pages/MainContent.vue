@@ -1,16 +1,19 @@
 <template>
   <p>Sekcja 1</p>
   <pizza-items></pizza-items>
+  <cart-main></cart-main>
   <p>Sekcja 3</p>
 </template>
 
 <script>
 import PizzaItems from "@/components/pizzas/PizzaItems.vue";
+import CartMain from "@/components/Cart/CartMain.vue";
 export default {
   components: {
     PizzaItems,
+    CartMain
   },
- 
+
 };
 </script>
 <style>

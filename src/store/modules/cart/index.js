@@ -5,7 +5,22 @@ export default {
   namespaced: true,
   state() {
     return {
-      cart: [],
+      cart: [
+        {
+          id: "p1",
+          name: "Hawajska",
+          size: "xxl",
+          price: 45.99,
+          qty: 1,
+        },
+        {
+          id: "p2",
+          name: "Amerykańska",
+          size: "s",
+          price: 24.99,
+          qty: 1,
+        },
+      ],
     };
   },
   mutations: mutations,
