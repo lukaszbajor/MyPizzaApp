@@ -25,7 +25,9 @@
 
       <input type="radio" name="pizza" />
     </div>
-    <button v-if="isLogin === true" @click="addItem">Dodaj do koszyka</button>
+    <button v-if="isLogin === true" @click="addItem(pizza)">
+      Dodaj do koszyka
+    </button>
     <button v-else disabled>Zaloguj się, aby dodać do koszyka</button>
   </li>
 </template>
@@ -42,9 +44,9 @@ export default {
     zal() {
       this.isLogin = !this.isLogin;
     },
-    addItem(product) {
-      this.$store.dispatch("addToCart", product)
-
+    addItem(pizza) {
+      this.$store.dispatch("cart/addToCart", { ...pizza });
+      console.log(this.$store.getters["cart/cart"]);
     },
   },
 };

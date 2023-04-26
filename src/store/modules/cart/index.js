@@ -9,16 +9,10 @@ export default {
         {
           id: "p1",
           name: "Hawajska",
-          size: "xxl",
-          price: 45.99,
-          qty: 1,
-        },
-        {
-          id: "p2",
-          name: "Amerykańska",
-          size: "s",
-          price: 24.99,
-          qty: 1,
+          ingredients: "sos, ser, oregano, kurczak, ananas",
+          priceSmall: 24.99,
+          priceMedium: 35.99,
+          priceBig: 45.99,
         },
       ],
     };

@@ -18,6 +18,7 @@ export default {
   },
   computed: {
     filteredCart() {
+      console.log(this.$store.getters["cart/cart"]);
       return this.$store.getters["cart/cart"];
     },
   },
