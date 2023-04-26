@@ -1,5 +1,5 @@
 export default {
-    addToCart() {
-
-}
+  addToCart(state, payload) {
+    state.cart.push(payload);
+  },
 };

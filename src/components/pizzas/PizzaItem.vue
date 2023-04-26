@@ -36,15 +36,15 @@ export default {
   data() {
     return {
       isLogin: true,
-     
     };
   },
   methods: {
     zal() {
       this.isLogin = !this.isLogin;
     },
-    addItem() {
-      console.log("OYEAH!");
+    addItem(product) {
+      this.$store.dispatch("addToCart", product)
+
     },
   },
 };

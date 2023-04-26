@@ -11,6 +11,11 @@ export default {
   components: {
     CartItem,
   },
+  methods: {
+    add(data) {
+      this.store.dispatch("cart/addToCart", data);
+    },
+  },
   computed: {
     filteredCart() {
       return this.$store.getters["cart/cart"];
