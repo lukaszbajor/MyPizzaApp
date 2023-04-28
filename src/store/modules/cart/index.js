@@ -13,6 +13,7 @@ export default {
           priceSmall: 24.99,
           priceMedium: 35.99,
           priceBig: 45.99,
+          qty: 1,
         },
       ],
     };

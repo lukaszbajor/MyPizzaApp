@@ -3,6 +3,7 @@
     <div class="xd">
       <h3>Nazwa</h3>
       <p>{{ product.name }}</p>
+      <p>{{ product.qty }}</p>
     </div>
     <!-- <div class="xd">
       <p>{{ product.size }} zł</p>
